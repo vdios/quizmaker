@@ -19,6 +19,10 @@ public class Quiz {
 		questions.add(q);
 	}
 
+	public ArrayList<Question> getQuestions(){
+		return questions;
+	}
+
 	public static Quiz loadFromFile(String sourceFile) throws FileNotFoundException, InvalidQuizFormatException{
 
 		Quiz quiz = new Quiz();
